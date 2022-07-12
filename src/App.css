@@ -1,3 +1,5 @@
+/* Reset CSS */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,27 +11,61 @@ li {
   padding: 0;
 }
 
-.header {
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 80%;
+}
+
+/* Header */
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000;
   color: #fff;
-}
-
-.header form {
-  display: flex;
-}
-
-.header input {
-  flex-grow: 1;
-
-  padding: 15px;
-  width: 100%;
-}
-
-.header button {
   padding: 10px;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 5px;
+}
+
+.logo h1 {
+  margin-right: 15px;
+}
+
+header input {
+  height: 100%;
+  font-size: 16px;
+  flex-basis: 100%;
+  padding: 0 5px;
+  margin-right: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+header button {
+  padding: 7px 5px;
+  background-color: #999999;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+header button img {
+  width: 50%;
 }
 
 /* VideoList */
