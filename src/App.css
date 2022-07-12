@@ -72,6 +72,7 @@ header button img {
 
 .video_content {
   display: flex;
+  flex-wrap: no-wrap;
 }
 
 .video_detail_container {
@@ -137,4 +138,21 @@ header button img {
 
 .video_description {
   white-space: pre-wrap;
+}
+
+/* Media */
+
+@media screen and (max-width: 780px) {
+  .App {
+    max-width: 100%;
+  }
+  .video_content {
+    flex-direction: column;
+  }
+  .video_list {
+    flex-direction: column;
+  }
+  .video_item_grid {
+    width: 100%;
+  }
 }
