@@ -68,7 +68,19 @@ header button img {
   width: 50%;
 }
 
-/* VideoList */
+/* VideoContent */
+
+.video_content {
+  display: flex;
+}
+
+.video_detail_container {
+  flex: 1 1 70%;
+}
+
+.video_list {
+  flex: 1 1 30%;
+}
 
 .video_list {
   display: flex;
@@ -78,8 +90,15 @@ header button img {
 /* VideoItem */
 
 .video_item {
-  width: 50%;
   padding: 5px;
+}
+
+.video_item_grid {
+  width: 50%;
+}
+
+.video_item_list {
+  width: 100%;
 }
 
 .video_item_container {
@@ -108,4 +127,14 @@ header button img {
 .video_item span {
   font-size: 14px;
   color: grey;
+}
+
+/* VideoDetail */
+
+.video_detail {
+  padding: 1px;
+}
+
+.video_description {
+  white-space: pre-wrap;
 }
