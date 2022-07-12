@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -19,4 +30,46 @@
 
 .header button {
   padding: 10px;
+}
+
+/* VideoList */
+
+.video_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* VideoItem */
+
+.video_item {
+  width: 50%;
+  padding: 5px;
+}
+
+.video_item_container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ececec;
+  box-shadow: 8px 8px 4px -8px rgba(41, 41, 41, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video_item:hover {
+  transform: scale(1.02);
+}
+
+.video_item img {
+  width: 40%;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.video_item h3 {
+  font-size: 18px;
+}
+
+.video_item span {
+  font-size: 14px;
+  color: grey;
 }

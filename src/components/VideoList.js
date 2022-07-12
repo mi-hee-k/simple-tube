@@ -3,13 +3,11 @@ import VidoeItem from "./VidoeItem";
 
 const VideoList = (props) => {
   return (
-    <div>
-      <ul>
-        {props.videos.map((video) => (
-          <VidoeItem key={video.id} video={video} />
-        ))}
-      </ul>
-    </div>
+    <ul className="video_list">
+      {props.videos.map((video) => (
+        <VidoeItem key={video.id} video={video} />
+      ))}
+    </ul>
   );
 };
 
